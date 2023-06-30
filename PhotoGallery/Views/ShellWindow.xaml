@@ -92,8 +92,9 @@
                         Margin="8"
                         Padding="8,0"
                         Command="{Binding OpenFolderCommand}"
-                        Content="Open Folder"
-                        FontSize="16" />
+                        FontSize="16"
+                        Icon="Folder24"
+                        ToolTip="Open Folder" />
 
                     <wpfui:Button
                         Grid.Column="1"
@@ -102,7 +103,8 @@
                         Padding="8,0"
                         Command="{Binding DeleteCommand}"
                         Content="Delete"
-                        FontSize="16" />
+                        FontSize="16"
+                        Icon="Delete24" />
                 </Grid>
             </Grid>
 
