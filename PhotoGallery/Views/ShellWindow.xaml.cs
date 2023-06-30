@@ -1,8 +1,6 @@
-﻿using MicaWPF.Controls;
+﻿namespace PhotoGallery.Views;
 
-namespace PhotoGallery.Views;
-
-public partial class ShellWindow : MicaWindow
+public partial class ShellWindow : Wpf.Ui.Controls.UiWindow
 {
     public ShellWindow()
     {
