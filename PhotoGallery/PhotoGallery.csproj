@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net7.0-windows10.0.19041.0</TargetFramework>
+		<TargetPlatformMinVersion>7.0</TargetPlatformMinVersion>
+		<Nullable>enable</Nullable>
+		<UseWPF>true</UseWPF> 
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="FileAndFolderDialog.Wpf" Version="1.0.1.1" />
+		<PackageReference Include="MicaWPF" Version="5.3.1" />
+		<PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.39" />
+		<PackageReference Include="Prism.DryIoc" Version="8.1.97" />
+	</ItemGroup>
+
+	 
+
+</Project>
