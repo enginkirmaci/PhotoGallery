@@ -47,6 +47,8 @@ public class ShellWindowModel : BindableBase
 
         LoadedCommand = new DelegateCommand<Window>((window) =>
         {
+            fileListView = window.FindChild<ListView>("FileListView");
+
             var folderPath = Environment.CurrentDirectory;
 
             watcher = new FileSystemWatcher();
@@ -56,8 +58,7 @@ public class ShellWindowModel : BindableBase
             watcher.EnableRaisingEvents = true;
 
             OpenFolderImages(folderPath);
-
-            fileListView = window.FindChild<ListView>("FileListView");
+            fileListView.Focus();
         });
 
         ClosingWindowCommand = new DelegateCommand<CancelEventArgs>((args) =>
